@@ -1,0 +1,160 @@
+/* CSS Document */
+
+
+/* Upload Test */
+
+
+/**
+* Manefesto of the Bauhaus
+* Developed By: Josh Story
+**/
+
+@font-face {
+    font-family: 'Righteous-Regular';
+    src: url('../fonts/Righteous-Regular.ttf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --font-sans: 'Righteous-Regular', 'helvetica', sans-serif;
+    --color-black: #000;
+    --color-red: #f60001;
+    --color-off_white: #f9e8c5;
+    --color-blue: #0065b2;
+    --color-yellow: #fdc309;
+    --color-white: #fff;
+}
+
+body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    font-size: 1.35rem;
+    line-height: 1.8rem;
+    letter-spacing: .1rem;
+    padding: 5rem 3rem 16.8rem;
+    background-image: url("../img/piet_mondrian_bauhaus.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: hard-light;
+    background-color: var(--color-off_white);
+}
+
+main {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    padding: 2.2rem;
+    box-shadow: inset 4px 4px 18px 1px rgba(0, 0, 0, .33), inset -4px -4px 18px 1px rgba(255, 255, 255, 0.8);
+    border: var(--color-black) 20px solid;
+    border-radius: 30px;
+}
+
+.main_vid {
+    display: flex;
+    justify-content: center;
+}
+
+.vid {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 30px;
+    visibility: visible;
+    animation: fadeIn 3.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.h1 {
+    text-align: center;
+    margin: 4rem 0 3rem;
+    line-height: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 5px solid var(--color-black);
+}
+
+.h1_span {
+    font-size: 150%;
+}
+
+.h1_span2 {
+    font-size: 115%;
+    line-height: 3rem;
+}
+
+.h1_2 {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 1.6rem;
+}
+
+.p1 {
+    margin: 2.5rem auto;
+}
+
+
+/* informative Popover Styles */
+
+
+/* inf.inf container */
+
+.inf {
+    position: relative;
+    display: inline-block;
+    border-bottom: 3px dotted var(--color-blue);
+    /* If you want dots under the hoverable text */
+}
+
+
+/* inf.inf text */
+
+.inf .inf_text {
+    visibility: hidden;
+    width: 33vw;
+    height: 100vh;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    text-align: left;
+    box-shadow: -5px -5px 17px rgba(0, 0, 0, .5);
+    /* Position the inf.inf text */
+    position: fixed;
+    z-index: 1;
+    bottom: -1rem;
+    right: 0px;
+    /* Fade in inf.inf */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+/* Show the inf.inf text when you mouse over the inf.inf container */
+
+.inf:hover .inf_text {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
