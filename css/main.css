@@ -235,6 +235,7 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
+    overflow: hidden;
 }
 
 .inf:hover .inf_text {
@@ -275,6 +276,7 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
+    overflow: hidden;
 }
 
 .crit:hover .crit_text {
@@ -315,6 +317,7 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
+    overflow: hidden;
 }
 
 .dis:hover .dis_text {
