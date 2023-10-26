@@ -214,7 +214,7 @@ main {
 
 .inf .inf_text {
     visibility: hidden;
-    width: 33vw;
+    width: 45vw;
     height: 100vh;
     color: var(--color-white);
     background-color: var(--color-blue);
@@ -237,20 +237,6 @@ main {
     animation-delay: 0.5s;
 }
 
-
-/* Annimations */
-
-@keyframes slideinright {
-    from {
-        margin-left: 100%;
-        width: 0vw;
-    }
-    to {
-        margin-left: 0px;
-        width: 33vw;
-    }
-}
-
 .inf:hover .inf_text {
     visibility: visible;
     opacity: 1;
@@ -268,7 +254,7 @@ main {
 
 .crit .crit_text {
     visibility: hidden;
-    width: 33vw;
+    width: 45vw;
     height: 100vh;
     color: var(--color-black);
     background-color: var(--color-yellow);
@@ -291,20 +277,6 @@ main {
     animation-delay: 0.5s;
 }
 
-
-/* Annimations */
-
-@keyframes slideinright {
-    from {
-        margin-left: 100%;
-        width: 0vw;
-    }
-    to {
-        margin-left: 0px;
-        width: 33vw;
-    }
-}
-
 .crit:hover .crit_text {
     visibility: visible;
     opacity: 1;
@@ -322,7 +294,7 @@ main {
 
 .dis .dis_text {
     visibility: hidden;
-    width: 33vw;
+    width: 45vw;
     height: 100vh;
     color: var(--color-white);
     background-color: var(--color-red);
@@ -343,6 +315,12 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
+}
+
+.dis:hover .dis_text {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer !important;
 }
 
 
@@ -414,7 +392,22 @@ main {
 }
 
 
-/* Annimations */
+/* Media Queries */
+
+@media screen and (min-width: 1720px) {
+    .inf .inf_text,
+    .crit .crit_text,
+    .dis .dis_text {
+        width: 35vw;
+        animation-name: slideinright_m;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+}
+
+
+/* Animations */
 
 @keyframes slideinright {
     from {
@@ -423,12 +416,17 @@ main {
     }
     to {
         margin-left: 0px;
-        width: 33vw;
+        width: 45vw;
     }
 }
 
-.dis:hover .dis_text {
-    visibility: visible;
-    opacity: 1;
-    cursor: pointer;
+@keyframes slideinright_m {
+    from {
+        margin-left: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-left: 0px;
+        width: 33vw;
+    }
 }
