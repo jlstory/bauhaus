@@ -434,7 +434,6 @@ main {
 @media screen and (max-width:1450px) {
     body {
         background-size: 64%;
-        /* background-repeat: round; */
     }
 }
 
