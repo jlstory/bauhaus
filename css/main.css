@@ -406,6 +406,29 @@ main {
     }
 }
 
+@media screen and (min-width: 2000px) {
+    .inf .inf_text,
+    .crit .crit_text,
+    .dis .dis_text {
+        width: 25vw;
+        animation-name: slideinright_l;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    *,
+    body,
+    h1,
+    h2,
+    p,
+    ul {
+        font-size: 98% !important;
+    }
+}
+
 
 /* Animations */
 
@@ -428,5 +451,16 @@ main {
     to {
         margin-left: 0px;
         width: 33vw;
+    }
+}
+
+@keyframes slideinright_l {
+    from {
+        margin-left: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-left: 0px;
+        width: 25vw;
     }
 }
