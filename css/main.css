@@ -289,7 +289,7 @@ main {
 .dis {
     position: relative;
     display: inline-block;
-    border-bottom: 3px dashed var(--color-yellow);
+    border-bottom: 3px dashed var(--color-red);
 }
 
 .dis .dis_text {
@@ -378,6 +378,13 @@ main {
     max-width: 10rem;
     mix-blend-mode: luminosity;
     opacity: .5;
+    border-radius: 500px;
+}
+
+.me_dis {
+    max-width: 10rem;
+    mix-blend-mode: multiply;
+    opacity: .35;
     border-radius: 500px;
 }
 
