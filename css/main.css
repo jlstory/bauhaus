@@ -235,7 +235,7 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .inf:hover .inf_text {
@@ -250,7 +250,7 @@ main {
 .crit {
     position: relative;
     display: inline-block;
-    border-bottom: 5px dashed var(--color-yellow);
+    border-bottom: 3px dashed var(--color-yellow);
 }
 
 .crit .crit_text {
@@ -276,7 +276,7 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .crit:hover .crit_text {
@@ -317,7 +317,7 @@ main {
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .dis:hover .dis_text {
@@ -401,6 +401,15 @@ main {
     line-height: 1rem;
 }
 
+.comparison {
+    display: inline-block;
+    height: 20rem;
+    /* max-width: 10rem; */
+    margin: 1rem;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+}
+
 
 /* Media Queries */
 
@@ -437,6 +446,15 @@ main {
 @media screen and (max-width:1450px) {
     body {
         background-size: 64%;
+    }
+    .inf .inf_text,
+    .crit .crit_text,
+    .dis .dis_text {
+        width: 65vw;
+        animation-name: slideinright_2;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
     }
 }
 
@@ -484,5 +502,16 @@ main {
     to {
         margin-left: 0px;
         width: 25vw;
+    }
+}
+
+@keyframes slideinright_2 {
+    from {
+        margin-left: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-left: 0px;
+        width: 65vw;
     }
 }
