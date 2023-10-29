@@ -426,7 +426,7 @@ main {
 }
 
 
-/* Media Queries */
+/** Media Queries **/
 
 @media screen and (min-width: 1720px) {
     .inf .inf_text,
