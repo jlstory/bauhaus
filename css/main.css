@@ -379,14 +379,14 @@ main {
 
 .me {
     max-width: 10rem;
-    mix-blend-mode: luminosity;
+    mix-blend-mode: luminosity !important;
     opacity: .5;
     border-radius: 500px;
 }
 
 .me_dis {
     max-width: 10rem;
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply !important;
     opacity: .35;
     border-radius: 500px;
 }
@@ -417,7 +417,7 @@ main {
     .inf .inf_text,
     .crit .crit_text,
     .dis .dis_text {
-        width: 35vw;
+        width: 42vw;
         animation-name: slideinright_m;
         animation-duration: 3.5s;
         animation-iteration-count: 1;
@@ -429,7 +429,7 @@ main {
     .inf .inf_text,
     .crit .crit_text,
     .dis .dis_text {
-        width: 25vw;
+        width: 38vw;
         animation-name: slideinright_l;
         animation-duration: 3.5s;
         animation-iteration-count: 1;
@@ -446,6 +446,9 @@ main {
 @media screen and (max-width:1450px) {
     body {
         background-size: 64%;
+    }
+    main {
+        max-width: 72rem;
     }
     .inf .inf_text,
     .crit .crit_text,
@@ -490,7 +493,7 @@ main {
     }
     to {
         margin-left: 0px;
-        width: 33vw;
+        width: 42vw;
     }
 }
 
@@ -501,7 +504,7 @@ main {
     }
     to {
         margin-left: 0px;
-        width: 25vw;
+        width: 38vw;
     }
 }
 
