@@ -414,7 +414,6 @@ main {
     margin: 3rem auto;
     border-radius: 30px;
     border: 2px inset var(--color-black);
-    box-shadow: inset 6px 6px 18px 4px var(--color-black);
 }
 
 .rooms_img {
