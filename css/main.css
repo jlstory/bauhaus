@@ -414,6 +414,7 @@ main {
     margin: 3rem auto;
     border-radius: 30px;
     border: 2px inset var(--color-black);
+    mix-blend-mode: overlay;
 }
 
 .rooms_img {
@@ -474,6 +475,18 @@ main {
     text-align: center;
     padding: 2rem auto 0rem;
     margin: 2rem auto 0rem;
+}
+
+.inf_text .sizer {
+    display: block;
+    width: 50rem;
+    margin: 1rem auto;
+}
+
+.inf_text .sizer_2 {
+    display: block;
+    width: 30rem;
+    margin: 1rem auto;
 }
 
 
