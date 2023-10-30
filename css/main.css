@@ -455,6 +455,27 @@ main {
     opacity: 0.85;
 }
 
+.masters {
+    display: block;
+    max-width: 50rem;
+    margin: 3rem auto;
+    border-radius: 30px;
+    border: 2px inset var(--color-black);
+    box-shadow: inset 6px 6px 18px 4px var(--color-black);
+    mix-blend-mode: overlay;
+}
+
+.hx_h2 {
+    display: block;
+    max-width: 50vw;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.75rem;
+    text-align: center;
+    padding: 2rem auto 0rem;
+    margin: 2rem auto 0rem;
+}
+
 
 /** Media Queries **/
 
