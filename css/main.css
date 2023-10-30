@@ -424,6 +424,17 @@ main {
     border: 1px solid transparent;
 }
 
+.workshop {
+    max-width: 15rem;
+    margin: 3rem auto;
+    border-radius: 30px;
+    border: 2px inset var(--color-black);
+    box-shadow: inset 6px 6px 18px 4px var(--color-black);
+    mix-blend-mode: overlay;
+    margin: .8rem;
+    margin-top: 1rem;
+}
+
 
 /** Media Queries **/
 
