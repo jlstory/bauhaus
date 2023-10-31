@@ -501,7 +501,7 @@ main {
 
 /** Media Queries **/
 
-@media screen and (min-width:1350px) {
+@media screen and (min-width:1250px) {
     body {
         background-size: 80%;
     }
@@ -511,14 +511,14 @@ main {
     .inf .inf_text,
     .crit .crit_text,
     .dis .dis_text {
-        width: 65vw;
+        width: 72vw;
     }
     .inf .inf_text {
         animation-name: slideup_2;
         animation-duration: 2.5s;
         animation-iteration-count: 1;
         animation-delay: 0.5s;
-        margin: 0 -32.5vw 0 0;
+        margin: 0 -36vw 0 0;
     }
     .crit .crit_text {
         animation-name: slideinright_2;
@@ -691,7 +691,7 @@ main {
     }
     to {
         margin-left: 0px;
-        width: 65vw;
+        width: 72vw;
     }
 }
 
@@ -749,7 +749,7 @@ main {
     }
     to {
         margin-right: 0px;
-        width: 65vw;
+        width: 72vw;
     }
 }
 
