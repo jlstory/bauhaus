@@ -722,7 +722,7 @@ main {
     }
     to {
         margin-top: 0px;
-        height: 38vw;
+        height: 100vw;
     }
 }
 
@@ -733,6 +733,6 @@ main {
     }
     to {
         margin-top: 0px;
-        height: 65vw;
+        height: 100vw;
     }
 }
