@@ -501,12 +501,12 @@ main {
 
 /** Media Queries **/
 
-@media screen and (max-width:1450px) {
+@media screen and (min-width:1350px) {
     body {
-        background-size: 64%;
+        background-size: 80%;
     }
     main {
-        max-width: 72rem;
+        max-width: 80vw;
     }
     .inf .inf_text,
     .crit .crit_text,
