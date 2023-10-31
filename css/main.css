@@ -595,6 +595,12 @@ main {
 }
 
 @media screen and (min-width: 2000px) {
+    body {
+        background-size: cover !important;
+    }
+    main {
+        max-width: 72vw;
+    }
     .inf .inf_text,
     .crit .crit_text,
     .dis .dis_text {
