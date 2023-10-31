@@ -600,6 +600,7 @@ main {
     }
     main {
         max-width: 72vw;
+        padding: 5rem;
     }
     .inf .inf_text,
     .crit .crit_text,
