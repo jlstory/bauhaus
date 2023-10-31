@@ -60,7 +60,6 @@ main {
     margin: 0 auto;
     background-color: var(--color-white);
     padding: 2.5rem;
-    box-shadow: inset 3px 3px 20px .5px rgba(0, 0, 0, .8), inset -4px -4px 18px 1px rgba(255, 255, 255, 0.8);
     border: var(--color-black) 20px solid;
 }
 
@@ -98,7 +97,7 @@ main {
     margin: 2rem auto;
     text-align: center;
     max-width: 13rem;
-    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, .7);
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, .2);
     animation: fadeIn 1.5s;
     animation-iteration-count: 1;
 }
@@ -225,13 +224,13 @@ main {
     font-weight: 500;
     line-height: 1.3rem;
     text-align: left;
-    box-shadow: -5px -5px 17px rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 1;
     bottom: 0rem;
-    right: 0px;
+    right: 50vw;
+    margin: 0 -22.5vw 0 0;
     transition: opacity 0.3s;
-    animation-name: slideinright;
+    animation-name: slideup;
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
@@ -266,7 +265,6 @@ main {
     font-weight: 500;
     line-height: 1.3rem;
     text-align: left;
-    box-shadow: -5px -5px 17px rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 1;
     bottom: 0rem;
@@ -307,13 +305,12 @@ main {
     font-weight: 500;
     line-height: 1.3rem;
     text-align: left;
-    box-shadow: -5px -5px 17px rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 1;
     bottom: 0rem;
-    right: 0px;
+    left: 0px;
     transition: opacity 0.3s;
-    animation-name: slideinright;
+    animation-name: slideinleft;
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
@@ -497,7 +494,22 @@ main {
     .crit .crit_text,
     .dis .dis_text {
         width: 42vw;
+    }
+    .inf .inf_text {
+        animation-name: slideup_m;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+        margin: 0 -21vw 0 0;
+    }
+    .crit .crit_text {
         animation-name: slideinright_m;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    .dis .dis_text {
+        animation-name: slideinleft_m;
         animation-duration: 3.5s;
         animation-iteration-count: 1;
         animation-delay: 0.5s;
@@ -509,16 +521,25 @@ main {
     .crit .crit_text,
     .dis .dis_text {
         width: 38vw;
+    }
+    .inf .inf_text {
+        animation-name: slideup_l;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+        margin: 0 -19vw 0 0;
+    }
+    .crit .crit_text {
         animation-name: slideinright_l;
         animation-duration: 3.5s;
         animation-iteration-count: 1;
         animation-delay: 0.5s;
     }
-}
-
-@media screen and (min-width:1450px) {
-    .key_br {
-        display: none;
+    .dis .dis_text {
+        animation-name: slideinleft_l;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
     }
 }
 
@@ -533,7 +554,22 @@ main {
     .crit .crit_text,
     .dis .dis_text {
         width: 65vw;
+    }
+    .inf .inf_text {
+        animation-name: slideup_2;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+        margin: 0 -32.5vw 0 0;
+    }
+    .crit .crit_text {
         animation-name: slideinright_2;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    .dis .dis_text {
+        animation-name: slideinleft_2;
         animation-duration: 2.5s;
         animation-iteration-count: 1;
         animation-delay: 0.5s;
@@ -551,8 +587,17 @@ main {
     }
 }
 
+@media screen and (min-width:1450px) {
+    .key_br {
+        display: none;
+    }
+}
 
-/* Animations */
+
+/*** Animations ***/
+
+
+/* slidein right */
 
 @keyframes slideinright {
     from {
@@ -595,5 +640,99 @@ main {
     to {
         margin-left: 0px;
         width: 65vw;
+    }
+}
+
+
+/* slidein left */
+
+@keyframes slideinleft {
+    from {
+        margin-right: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-right: 0px;
+        width: 45vw;
+    }
+}
+
+@keyframes slideinleft_m {
+    from {
+        margin-right: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-right: 0px;
+        width: 42vw;
+    }
+}
+
+@keyframes slideinleft_l {
+    from {
+        margin-right: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-right: 0px;
+        width: 38vw;
+    }
+}
+
+@keyframes slideinleft_2 {
+    from {
+        margin-right: 100%;
+        width: 0vw;
+    }
+    to {
+        margin-right: 0px;
+        width: 65vw;
+    }
+}
+
+
+/* slideup */
+
+@keyframes slideup {
+    from {
+        margin-top: 100%;
+        height: 0vw;
+    }
+    to {
+        margin-top: 0px;
+        height: 100vw;
+    }
+}
+
+@keyframes slideup_m {
+    from {
+        margin-top: 100%;
+        height: 0vw;
+    }
+    to {
+        margin-top: 0px;
+        height: 100vw;
+    }
+}
+
+@keyframes slideup_l {
+    from {
+        margin-top: 100%;
+        height: 0vw;
+    }
+    to {
+        margin-top: 0px;
+        height: 38vw;
+    }
+}
+
+@keyframes slideup_2 {
+    from {
+        margin-top: 100%;
+        height: 0vw;
+    }
+    to {
+        margin-top: 0px;
+        height: 65vw;
     }
 }
