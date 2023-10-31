@@ -492,6 +492,12 @@ main {
     margin: 1rem auto;
 }
 
+.ess img,
+.ess .dis_text {
+    display: block;
+    text-align: center;
+}
+
 
 /** Media Queries **/
 
